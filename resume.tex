@@ -1,0 +1,54 @@
+\documentclass[letter,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{CJKutf8}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{TLCresume}
+\usepackage{xcolor}
+
+%=====================
+% CONTACT INFORMATION
+%=====================
+\author{Your Name} 
+\def\phone{Phone Number} 
+\def\city{City} 
+\def\email{Email} 
+% site edited in section/header.tex
+\def\github{github}
+\def\LinkedIn{linkedin}
+
+% Define color for section headers
+% \definecolor{highlightColor}{RGB}{0, 0, 0} % black
+% \definecolor{highlightColor}{RGB}{41, 59, 89} % blue
+\definecolor{highlightColor}{RGB}{32, 121, 199} % light-blue
+% \definecolor{highlightColor}{RGB}{247, 93, 93} % light-red
+% \definecolor{highlightColor}{RGB}{0, 171, 68} % bright-green
+
+% Define color for hrefs
+\definecolor{hrefColor}{RGB}{0, 0, 0} % black
+
+\begin{document}
+\import{sections/}{header}
+\vspace*{10pt}
+
+\section*{\textcolor{highlightColor}{Background}}
+\import{sections/}{background}
+\vspace*{10pt}
+
+\section*{\textcolor{highlightColor}{Projects}}
+\import{sections/}{projects}
+\vspace*{10pt}
+
+\section*{\textcolor{highlightColor}{Education}}
+\import{sections/}{education}
+\vspace*{10pt}
+
+\section*{\textcolor{highlightColor}{Work Experience}}
+\import{sections/}{experience}
+\vspace*{10pt}
+
+\section*{\textcolor{highlightColor}{Skills}}
+\import{sections/}{skills}
+\vspace*{10pt}
+
+\end{document}

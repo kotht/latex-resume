@@ -1,0 +1,30 @@
+% I edited the minipages to fit widths for if you have a long name and/or title
+%====================
+% Header: Contact
+%====================
+\def\portfolio{portfolio.com} % personal website
+\def\github{github} % github username
+\def\LinkedIn{linkedin} % LinkedIn username
+
+\begin{center}
+	\begin{minipage}[b]{.2\textwidth}
+	\raggedright
+	{\large \textcolor{hrefColor}{\phone}} \\ % Phone
+	\textcolor{hrefColor}{\city} \\ % City
+	\href{mailto:\email}{\textcolor{hrefColor}{\email}} % Email
+	\end{minipage}%
+	\begin{minipage}[b]{.6\textwidth}
+	\makeatletter
+	\centering {\huge \@author} \\
+	\makeatother
+    \vspace{.7em}
+	\end{minipage}%
+	\begin{minipage}[b]{.2\textwidth}
+	\raggedleft
+        \href{https://\portfolio}{\textcolor{hrefColor}{\portfolio}} \\% Portfolio
+	\href{https://github.com/\github}{\textcolor{hrefColor}{GitHub: \github}} \\% Github
+	\href{https://www.linkedin.com/in/\LinkedIn}{\textcolor{hrefColor}{LinkedIn: \LinkedIn}} \\% LinkedIn
+	\end{minipage}
+
+\end{center}
+
